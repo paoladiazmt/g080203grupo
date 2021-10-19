@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reto 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="misFunciones.js"></script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>RETO 3</h1>
+    <! –– CLIENTES ––>
+    <h1>CLIENTES</h1>
+    <div id="Clientes"></div>
+    <div>
+        <input type="number" id="idCliente" placeholder="Ingrese Id">
+        <input type="text" id="nameCliente" placeholder="Nombre del Cliente">
+        <input type="number" id="emailCliente" placeholder="Correo electrónico del Cliente">
+        <input type="password" pattern=".{6,}" id="passCliente" placeholder="Password del Cliente">
+        <input type="number" id="edadCliente" placeholder="Edad del Cliente">
+
+    </div>
+
+    <button onclick="guardarCliente()">Post</button>
+    <button onclick="consultarClientes()">Get</button>
+
+    <! –– GAMES ––>
+
+    <h1>GAMES</h1>
+    <div id="Games"></div>
+    <div>
+        <input type="number" id="idGames" placeholder="Ingrese Id">
+        <input type="text" id="desarrolladorGames" placeholder="Creador del Juego">
+        <input type="number" id="ageGames" placeholder="Edad Permitida">
+        <input type="text" id="nameGames" placeholder="Nombre del Juego">
+        <input type="text" id="DescriptionGames" placeholder="Descripcion del Juego">
+
+    </div>
+
+    <button onclick="guardarGames()">Post</button>
+    <button onclick="consultarGames()">Get</button>
+
+    <! –– CATEGORIAS ––>
+
+    <h1> CATEGORIAS</h1>
+    <div id="Categorias"></div>
+
+
+    <div>
+        <input type="number" id="idCategoria" placeholder="Ingrese Id">
+        <input type="text" id="name" placeholder="name">
+        <input type="text" id="description" placeholder="description">
+
+    </div>
+
+    <button onclick="guardarCategorias()">Post Categorias</button>
+    <button onclick="consultarCategorias()">Get Categorias</button>
+
+    <! –– RESERVACIONES ––>
+    <h1>RESERVACIONES</h1>
+    <div id="Reservas"></div>
+    <div>
+        <input type="number" id="idReserva" placeholder="Ingrese Id">
+        <input type="number" id="fechaReserva" placeholder="Fecha de Reserva">
+        <input type="number" id="fechaDevolucion" placeholder="Fecha de Devolución">
+        <input type="number" id="statusReserva" placeholder="Status de la Reserva ">
+
+    </div>
+
+    <button onclick="guardarReserva() ">Post</button>
+    <button onclick="consultarReserva() ">Get</button>
+
+    <! –– MENSAJES ––>
+
+    <h1> MENSAJES</h1>
+    <div id="Mensajes"></div>
+
+
+    <div>
+        <input type="number" id="idMensaje" placeholder="Id del mensaje">
+        <input type="text" id="messageText" placeholder="Texto del mensaje">
+
+    </div>
+
+    <button onclick="guardarMensajess()">Post Categorias</button>
+    <button onclick="consultarMensajes()">Get Categorias</button>
+
+    <div>
+        <table>
+
+            <tbody id="miResultado">
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+</body>
+
+</html>
